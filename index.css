@@ -123,14 +123,18 @@ header a:hover{
 }
 .hero-image {
  height: 100%;
- display: flex;
- flex-direction: row-reverse;
+ background: url('Assets/Hero Image (Desktop View).png');
+ background-position: right;
+ background-repeat: no-repeat;
+ background-size: contain;
+ width: 60%;
 }
 .tablet-image {
   display: none;
 }
 .desktop-image {
   height: 100%;
+  display: none;
 }
 
 /* Features section */
@@ -319,21 +323,16 @@ footer {
     height: 100vh;
     width: 90vw;
   }
-  .desktop-image {
-    display: none;
-  }
-  .tablet-image {
-    display: block;
-    height: 50vh;
-    width: 100%;
-  }
   .text-section {
     width: 100%;
   }
   .hero-image {
     width: 100%;
     height: 100%;
-    text-align: center;
+    background: url('Assets/Hero Image (Tablet View).png');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
   }
 
   /* Features Section */
@@ -410,9 +409,6 @@ footer {
     margin: 2% 5% 0 5%;
     height: 130vh;
     width: 90vw;
-  }
-  .desktop-image {
-    display: none;
   }
   .link-section {
     display: flex;
